@@ -131,7 +131,7 @@ Introduction to AI-Assisted SE (Week 1) - Lecture Slides](https://github.com/414
 > - And finally, you would be writing your first prompt in this classroom and log it based on today's lab. <br>最後,你會寫你的第一個提示記錄在今天的實驗室上
 
 
-#### [00:05:32–00:05:36]
+#### slide：6
 <div align="left" >
   <img src="./Lecture/Week01/Week01-07.jpg" width="50%">
 </div>
@@ -151,7 +151,7 @@ Introduction to AI-Assisted SE (Week 1) - Lecture Slides](https://github.com/414
   > - Level 3：Think about AI systems<分析 AI 工程對技術、組織、基礎設施與社會的影響。>
 考試或報告時，建議特別記住三組關鍵詞：Apply → Integrate → Analyze 也就是：應用 AI → 整合 AI → 評估 AI 的影響。
 
-
+[00:05:32–00:05:36]
 > - So let's take the whole picture of the whole course. <br>因此,讓我們把整個航道的全貌照一照.
 > - The semester, we want you to be able to articulate and apply effective practices of AI-assisted engineering and prompt engineering in software development. <br>學期,我們要你講清楚，應用AI輔助工程的有效做法，並迅速進行軟體開發工程。
 
