@@ -311,3 +311,113 @@ Introduction to AI-Assisted SE (Week 1) - Lecture Slides](https://github.com/414
   <img src="./Lecture/Week01/Week01-38.jpg" width="50%">
 </div>
 
+## slide：39
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-39.jpg" width="50%">
+</div>
+
+## slide：40
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-40.jpg" width="50%">
+</div>
+
+## slide：41
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-41.jpg" width="50%">
+</div>
+
+## slide：42
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-42.jpg" width="50%">
+</div>
+
+## slide：43
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-43.jpg" width="50%">
+</div>
+
+## slide：44
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-44.jpg" width="50%">
+</div>
+
+## slide：45
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-45.jpg" width="50%">
+</div>
+
+## slide：46
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-46.jpg" width="50%">
+</div>
+
+## slide：47
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-47.jpg" width="50%">
+</div>
+
+## slide：48
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-48.jpg" width="50%">
+</div>
+
+## slide：49
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-49.jpg" width="50%">
+</div>
+
+## slide：50
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-50.jpg" width="50%">
+</div>
+
+## slide：51
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-51.jpg" width="50%">
+</div>
+
+## slide：52
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-52.jpg" width="50%">
+</div>
+
+## slide：53
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-53.jpg" width="50%">
+</div>
+
+## slide：54
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-54.jpg" width="50%">
+</div>
+
+## slide：55
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-55.jpg" width="50%">
+</div>
+
+## slide：56
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-56.jpg" width="50%">
+</div>
+
+## slide：57
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-57.jpg" width="50%">
+</div>
+
+## slide：58
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-58.jpg" width="50%">
+</div>
+
+## slide：59
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-59.jpg" width="50%">
+</div>
+
+## slide：60
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-60.jpg" width="50%">
+</div>
+
