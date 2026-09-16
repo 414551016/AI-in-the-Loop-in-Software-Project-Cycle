@@ -26,27 +26,36 @@
 
 #### [00:04:17–00:04:23]
 <div align="left" >
-  <img src="./Lecture/Week01/Week01-05.jpg" width="33%">
+  <img src="./Lecture/Week01/Week01-05.jpg" width="50%">
 </div>
 
 > - Okay, so let's get started with the content <br>好吧,讓我們開始的內容
 
 #### [00:04:47–00:05:31]
 <div align="left" >
-  <img src="./Lecture/Week01/Week01-06.jpg" width="33%">
+  <img src="./Lecture/Week01/Week01-06.jpg" width="50%">
 </div>
 
 這張投影片是在說明本堂課的 Learning Objectives（學習目標）。核心不是單純學「怎麼寫 Prompt」，而是建立一套 在 AI Agent 時代，工程師如何與 AI 協作、監督與控制的思維。
 最重要的主軸可以濃縮成三件事：說清楚要什麼 → 觀察 AI 怎麼做 → 必要時把控制權拿回來
 - 1. 工程師在 Agentic Era 的三個責任
-  > specifying intent, evaluating trajectories, and knowing when to take back control <br> Specifying intent：明確描述意圖
-  > - 工程師必須把真正需求說清楚。
-  > - 不能只說「幫我完成」，而要交代目標、限制、輸出格式、判斷標準。
-  > - 這正是你前面 Lab 1 的 Intent–Output Gap。
+  > - specifying intent, evaluating trajectories, and knowing when to take back control <br> Specifying intent：明確描述意圖
+  >   - 工程師必須把真正需求說清楚。
+  >   - 不能只說「幫我完成」，而要交代目標、限制、輸出格式、判斷標準。
+  >   - 這正是你前面 Lab 1 的 Intent–Output Gap。
   > 例如只寫：Explain this code.
   > <br>模型就必須自行猜測：要多詳細？給誰看？要不要講 recursion？
   > <br>如果改成：Explain this code to a junior engineer who has never learned recursion.
   > <br>你的 Intent 就比較明確。
+  > - Evaluating trajectories：評估 AI 的執行軌跡
+  > <br>這裡的 trajectory 不只是看最後答案，而是看 AI「一路怎麼做」。例如 AI Agent 要完成一個程式任務：理解需求 ↓ 分析問題 ↓ 決定修改哪些檔案 ↓ 產生程式碼 ↓ 執行測試 ↓ 修改錯誤 ↓ 輸出結果
+  > <br>工程師不能只問：最後程式能不能跑？
+  > <br>而要問：這就是 trajectory evaluation。
+  >   - AI 做了哪些決定？
+  >   - 它有沒有誤解需求？
+  >   - 是否修改了不該修改的地方？
+  >   - 是否用了錯誤假設？
+  >   - 是否真的驗證過結果？
 
 
 > - So the learning objective for today is <br>所以今天的學習目標是
