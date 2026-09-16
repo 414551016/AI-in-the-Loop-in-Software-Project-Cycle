@@ -36,6 +36,19 @@
   <img src="./Lecture/Week01/Week01-06.jpg" width="33%">
 </div>
 
+這張投影片是在說明本堂課的 Learning Objectives（學習目標）。核心不是單純學「怎麼寫 Prompt」，而是建立一套 在 AI Agent 時代，工程師如何與 AI 協作、監督與控制的思維。
+最重要的主軸可以濃縮成三件事：說清楚要什麼 → 觀察 AI 怎麼做 → 必要時把控制權拿回來
+- 1. 工程師在 Agentic Era 的三個責任
+  > specifying intent, evaluating trajectories, and knowing when to take back control <br> Specifying intent：明確描述意圖
+  > - 工程師必須把真正需求說清楚。
+  > - 不能只說「幫我完成」，而要交代目標、限制、輸出格式、判斷標準。
+  > - 這正是你前面 Lab 1 的 Intent–Output Gap。
+  > 例如只寫：Explain this code.
+  > <br>模型就必須自行猜測：要多詳細？給誰看？要不要講 recursion？
+  > <br>如果改成：Explain this code to a junior engineer who has never learned recursion.
+  > <br>你的 Intent 就比較明確。
+
+
 > - So the learning objective for today is <br>所以今天的學習目標是
 > - I want everybody to be able to describe <br>我希望每個人都能描述
 > - what we're going to learn for this semester, <br>這學期我們要學什麼
@@ -48,6 +61,7 @@
 > - So I also want you to identify at least one decision <br>所以我還要你至少確定一個決定
 > - that model made without being asked during the demo and evaluate whether you would have made the same choice. <br>演示時未詢問的模型並評估你是否會做出同樣的選擇。
 > - And finally, you would be writing your first prompt in this classroom and log it based on today's lab. <br>最後,你會寫你的第一個提示記錄在今天的實驗室上
+
 
 #### [00:05:32–00:05:36]
 <div align="left" >
