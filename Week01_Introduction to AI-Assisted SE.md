@@ -2,15 +2,8 @@
 
 
 ### Week 1 課堂逐字稿
-<div align="left" style="border:1px solid red;">
-  <div style="display:inline-block; padding:4px; border:2px solid black;">
-  <img src="./Lecture/Week01-02.jpg" width="33%" style="border:1px solid">
-</div></div>
-
-<div align="left">
-<div style="display:inline-block; padding:4px; border:2px solid black;">
-./Lecture/Week01-03.jpg
-</div>
+<div align="left" >
+  <img src="./Lecture/Week01-02.jpg" width="33%">
 </div>
 
 #### [00:00:38–00:00:42]
