@@ -31,7 +31,7 @@
 
 > - Okay, so let's get started with the content <br>好吧,讓我們開始的內容
 
-#### [00:04:47–00:04:50]
+#### [00:04:47–00:05:31]
 <div align="left" >
   <img src="./Lecture/Week01/Week01-06.jpg" width="33%">
 </div>
@@ -46,10 +46,16 @@
 > - And I also hope that you could understand <br>我也希望你能夠明白
 > - the core structure, the components, expectations and the resources. <br>核心結構、組成部分、期望以及資源。
 > - So I also want you to identify at least one decision <br>所以我還要你至少確定一個決定
+> - that model made without being asked during the demo and evaluate whether you would have made the same choice. <br>演示時未詢問的模型並評估你是否會做出同樣的選擇。
+> - And finally, you would be writing your first prompt in this classroom and log it based on today's lab. <br>最後,你會寫你的第一個提示記錄在今天的實驗室上
 
+#### [00:05:32–00:05:36]
 <div align="left" >
   <img src="./Lecture/Week01/Week01-07.jpg" width="33%">
 </div>
+
+> - So let's take the whole picture of the whole course. <br>因此,讓我們把整個航道的全貌照一照.
+> - The semester, we want you to be able to articulate and apply effective practices of AI-assisted engineering and prompt engineering in software development. <br>學期,我們要你講清楚，應用AI輔助工程的有效做法，並迅速進行軟體開發工程。
 
 <div align="left" >
   <img src="./Lecture/Week01/Week01-08.jpg" width="33%">
