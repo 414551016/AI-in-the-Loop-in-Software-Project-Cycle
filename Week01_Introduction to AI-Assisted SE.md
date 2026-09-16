@@ -1,5 +1,6 @@
 # Week01_Introduction to AI-Assisted SE
-- 教學資源：[week1-Introduction-260907](https://github.com/414551016/AI-in-the-Loop-in-Software-Project-Cycle/blob/main/Lecture/week1-Introduction-260907.pdf)
+- 教學資源：[
+Introduction to AI-Assisted SE (Week 1) - Lecture Slides](https://github.com/414551016/AI-in-the-Loop-in-Software-Project-Cycle/blob/main/Lecture/week1-Introduction-260907.pdf)
 
 ### Week 1 課堂逐字稿
 <div align="left" >
