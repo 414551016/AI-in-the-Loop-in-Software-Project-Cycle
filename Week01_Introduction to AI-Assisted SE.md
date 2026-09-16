@@ -151,14 +151,17 @@ Introduction to AI-Assisted SE (Week 1) - Lecture Slides](https://github.com/414
 > - So let's take the whole picture of the whole course. <br>因此,讓我們把整個航道的全貌照一照.
 > - The semester, we want you to be able to articulate and apply effective practices of AI-assisted engineering and prompt engineering in software development. <br>學期,我們要你講清楚，應用AI輔助工程的有效做法，並迅速進行軟體開發工程。
 
+#### slide：8
 <div align="left" >
-  <img src="./Lecture/Week01/Week01-08.jpg" width="33%">
+  <img src="./Lecture/Week01/Week01-08.jpg" width="50%">
 </div>
 
+#### slide：9
 <div align="left" >
-  <img src="./Lecture/Week01/Week01-09.jpg" width="33%">
+  <img src="./Lecture/Week01/Week01-09.jpg" width="50%">
 </div>
 
+#### slide：10
 <div align="left" >
-  <img src="./Lecture/Week01/Week01-10.jpg" width="33%">
+  <img src="./Lecture/Week01/Week01-10.jpg" width="50%">
 </div>
