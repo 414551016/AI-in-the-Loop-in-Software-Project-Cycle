@@ -24,14 +24,28 @@
 
 > - We apologize for this,<br>我們為此道歉,
 
-
+#### [00:04:17–00:04:23]
 <div align="left" >
   <img src="./Lecture/Week01/Week01-05.jpg" width="33%">
 </div>
 
+> - Okay, so let's get started with the content <br>好吧,讓我們開始的內容
+
+#### [00:04:47–00:04:50]
 <div align="left" >
   <img src="./Lecture/Week01/Week01-06.jpg" width="33%">
 </div>
+
+> - So the learning objective for today is <br>所以今天的學習目標是
+> - I want everybody to be able to describe <br>我希望每個人都能描述
+> - what we're going to learn for this semester, <br>這學期我們要學什麼
+> - the three responsibilities in the agentic area, <br>代理領域的三項責任,
+> - era of coding, specifying the intent, <br>規定意圖,
+> - evaluating trajectories <br>評估軌跡
+> - and knowing when to take back control from the AI. <br>並且知道何時從AI手中奪回控制權.
+> - And I also hope that you could understand <br>我也希望你能夠明白
+> - the core structure, the components, expectations and the resources. <br>核心結構、組成部分、期望以及資源。
+> - So I also want you to identify at least one decision <br>所以我還要你至少確定一個決定
 
 <div align="left" >
   <img src="./Lecture/Week01/Week01-07.jpg" width="33%">
