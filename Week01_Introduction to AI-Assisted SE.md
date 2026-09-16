@@ -3,8 +3,9 @@
 
 ### Week 1 課堂逐字稿
 <div align="left" style="border:1px solid red;">
+  <div style="display:inline-block; padding:4px; border:2px solid black;">
   <img src="./Lecture/Week01-02.jpg" width="33%" style="border:1px solid">
-</div>
+</div></div>
 
 #### [00:00:38–00:00:42]
 > Hi, can everyone hear me?<br>嗨,大家能聽到我嗎?
