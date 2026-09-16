@@ -19,7 +19,7 @@
 
 
 <div align="left" >
-  <img src="./Lecture/Week01/Week01-04.jpg" width="40%">
+  <img src="./Lecture/Week01/Week01-04.jpg" width="50%">
 </div>
 
 #### [00:02:33–00:02:38]
