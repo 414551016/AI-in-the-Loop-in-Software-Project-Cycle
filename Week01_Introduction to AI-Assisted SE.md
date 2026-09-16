@@ -38,8 +38,8 @@
 
 這張投影片是在說明本堂課的 Learning Objectives（學習目標）。核心不是單純學「怎麼寫 Prompt」，而是建立一套 在 AI Agent 時代，工程師如何與 AI 協作、監督與控制的思維。
 最重要的主軸可以濃縮成三件事：說清楚要什麼 → 觀察 AI 怎麼做 → 必要時把控制權拿回來
-- 1. 工程師在 Agentic Era 的三個責任
-  > - specifying intent, evaluating trajectories, and knowing when to take back control <br> Specifying intent：明確描述意圖
+- 1. 工程師在 Agentic Era 的三個責任：specifying intent, evaluating trajectories, and knowing when to take back control
+  > - Specifying intent：明確描述意圖
   >   - 工程師必須把真正需求說清楚。
   >   - 不能只說「幫我完成」，而要交代目標、限制、輸出格式、判斷標準。
   >   - 這正是你前面 Lab 1 的 Intent–Output Gap。
@@ -72,7 +72,31 @@
   >   - 不可逆操作
   > 因此 Agentic AI 的核心不是：「AI 越自主越好」。而是：適當授權 + 持續監督 + 必要時人工接管。
 - 2. Understand the course structure, components, expectations, and resources
-     
+  > 第二個學習目標是：了解整門課的架構、課程組成、要求以及可用資源。
+  > <br>也就是學生需要知道：
+  >   - Lab 要做什麼
+  >   - Assignment 要做什麼
+  >   - Project 如何進行
+  >   - 作業如何評分
+  >   - GitHub / AI tools 如何使用
+  >   - 課程提供哪些資源
+  > <br>這點看起來只是行政資訊，但其實老師希望你開始建立：Course workflow / project workflow 而不是每週只完成單一作業。
+- 3. Identify a decision the model made without being asked
+  > 第三點非常重要：找出至少一個「你沒有要求，但模型自己做出的決定」。這正是本課程一直強調的概念。
+  > <br>例如你問：Explain this Python function.
+  > <br>AI 可能自行決定：
+  >   - 使用專業術語
+  >   - 假設你知道 Python
+  >   - 假設你知道 recursion
+  >   - 用條列式回答
+  >   - 說它是 Quicksort
+  >   - 不解釋 time complexity
+  > 這些都是：Implicit decisions（隱含決策）老師要求你不只發現它，還要進一步問：如果是我，我會做相同決定嗎？
+  > <br>例如：
+  > <br>AI 的決定：假設讀者已經了解 recursion
+  > <br>我的評估：我不會做相同選擇，為我的真正目標讀者是初學者。這其實就是 Human Oversight（人工監督） 的雛形。
+- 4. Write your first Prompt Engineering Log
+  > 第四點：根據今天的 Lab，完成第一份 Prompt Engineering Log。
 
 > - So the learning objective for today is <br>所以今天的學習目標是
 > - I want everybody to be able to describe <br>我希望每個人都能描述
