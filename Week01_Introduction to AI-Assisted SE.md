@@ -3,7 +3,7 @@
 
 ### Week 1 課堂逐字稿
 <div align="left" >
-  <img src="./Lecture/Week01-02.jpg" width="33%">
+  <img src="./Lecture/Week01-02.jpg" width="33%" style="border:1px solid>
 </div>
 
 #### [00:00:38–00:00:42]
