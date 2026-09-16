@@ -17,9 +17,13 @@
 > - as the first announcement about the wait list<br>作為關於等待列表的第一次宣佈
 > - is that we're not taking manual add drop for this class.<br>也就是說,我們不 手動加降本類。
 
+
 <div align="left" >
   <img src="./Lecture/Week01/Week01-04.jpg" width="33%">
 </div>
+#### [00:02:33–00:02:38]
+> - We apologize for this,<br>我們為此道歉,
+
 
 <div align="left" >
   <img src="./Lecture/Week01/Week01-05.jpg" width="33%">
