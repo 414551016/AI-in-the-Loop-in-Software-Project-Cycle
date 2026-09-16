@@ -305,3 +305,9 @@ Introduction to AI-Assisted SE (Week 1) - Lecture Slides](https://github.com/414
 <div align="left" >
   <img src="./Lecture/Week01/Week01-37.jpg" width="50%">
 </div>
+
+## slide：38
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-38.jpg" width="50%">
+</div>
+
