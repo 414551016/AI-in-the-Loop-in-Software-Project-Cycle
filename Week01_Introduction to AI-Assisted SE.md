@@ -14,29 +14,29 @@
 </div>
 
 <div align="left" >
-  <img src="./Lecture/Week01-04.jpg" width="33%">
+  <img src="./Lecture/Week01/Week01-04.jpg" width="33%">
 </div>
 
 <div align="left" >
-  <img src="./Lecture/Week01-05.jpg" width="33%">
+  <img src="./Lecture/Week01/Week01-05.jpg" width="33%">
 </div>
 
 <div align="left" >
-  <img src="./Lecture/Week01-06.jpg" width="33%">
+  <img src="./Lecture/Week01/Week01-06.jpg" width="33%">
 </div>
 
 <div align="left" >
-  <img src="./Lecture/Week01-07.jpg" width="33%">
+  <img src="./Lecture/Week01/Week01-07.jpg" width="33%">
 </div>
 
 <div align="left" >
-  <img src="./Lecture/Week01-08.jpg" width="33%">
+  <img src="./Lecture/Week01/Week01-08.jpg" width="33%">
 </div>
 
 <div align="left" >
-  <img src="./Lecture/Week01-09.jpg" width="33%">
+  <img src="./Lecture/Week01/Week01-09.jpg" width="33%">
 </div>
 
 <div align="left" >
-  <img src="./Lecture/Week01-10.jpg" width="33%">
+  <img src="./Lecture/Week01/Week01-10.jpg" width="33%">
 </div>
