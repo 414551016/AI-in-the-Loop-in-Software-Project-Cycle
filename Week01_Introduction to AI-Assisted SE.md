@@ -8,19 +8,17 @@ Introduction to AI-Assisted SE (Week 1) - Lecture Slides](https://github.com/414
 
 ### Week 1 課堂逐字稿
 #### slide：2
-[00:00:38–00:02:27]
 <div align="left" >
   <img src="./Lecture/Week01/Week01-02.jpg" width="50%">
 </div>
-
+[00:00:38–00:02:27]
 > Hi, can everyone hear me?<br>嗨,大家能聽到我嗎?
 
 #### slide：3
-[00:02:30–00:02:33]
 <div align="left" >
   <img src="./Lecture/Week01/Week01-03.jpg" width="50%">
 </div>
-
+[00:02:30–00:02:33]
 > - as the first announcement about the wait list<br>作為關於等待列表的第一次宣佈
 > - is that we're not taking manual add drop for this class.<br>也就是說,我們不 手動加降本類。
 
@@ -41,7 +39,6 @@ Introduction to AI-Assisted SE (Week 1) - Lecture Slides](https://github.com/414
 > - Okay, so let's get started with the content <br>好吧,讓我們開始的內容
 
 #### slide：6
-[00:04:47–00:05:31]
 <div align="left" >
   <img src="./Lecture/Week01/Week01-06.jpg" width="50%">
 </div>
@@ -117,7 +114,7 @@ Introduction to AI-Assisted SE (Week 1) - Lecture Slides](https://github.com/414
 </div>
 
 **總結：在 AI Agent 時代，工程師的工作不只是「下 Prompt」，而是要清楚定義意圖、監督 AI 的決策與執行過程，並在 AI 偏離目標或風險過高時重新取得控制權。**
-
+<br>[00:04:47–00:05:31]
 > - So the learning objective for today is <br>所以今天的學習目標是
 > - I want everybody to be able to describe <br>我希望每個人都能描述
 > - what we're going to learn for this semester, <br>這學期我們要學什麼
