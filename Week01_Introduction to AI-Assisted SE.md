@@ -132,11 +132,15 @@
 - Articulate and apply effective practices of AI-assisted engineering and prompt engineering in software development<br>在軟體開發中闡述並應用 AI 輔助工程與提示詞工程的有效實踐
   > 重點是：不只知道 Prompt Engineering（提示詞工程）是什麼，而是要能實際運用在軟體開發中。你需要學會如何清楚表達需求、設計 Prompt、使用 AI 協助寫程式、除錯、測試、文件撰寫與需求分析，並判斷 AI 的輸出是否符合工程需求。這裡的關鍵字是 Articulate（闡述） + Apply（應用），也就是「能說明，也能實作」。
 - Understand core software engineering concepts…and how to effectively and ethically incorporate AI<br>理解軟體工程的核心概念…以及如何有效且合乎道德地融入 AI 技術
-  > 這表示課程並不是「AI 工具使用課」，而仍然以 Software Engineering 為核心。你需要理解需求分析、版本控制、測試、Code Review、團隊協作、文件化、軟體品質等基本工程方法，再思考 AI 應該放在哪個位置。另一個重點是 Ethically（符合倫理地），包括隱私、著作權、資料來源、AI hallucination、責任歸屬與安全問題。
+  > 這表示課程並不是「AI 工具使用課」，而仍然以 Software Engineering（軟體工程）為核心。你需要理解需求分析、版本控制、測試、Code Review（程式碼審查）、團隊協作、文件化、軟體品質等基本工程方法，再思考 AI 應該放在哪個位置。另一個重點是 Ethically（符合倫理地），包括隱私、著作權、資料來源、AI hallucination（AI 幻覺）、責任歸屬與安全問題。
 - Analyze the broader implications and societal impacts of AI-assisted engineering and its infrastructure<br>分析 AI 輔助工程及其基礎設施的深遠意義與社會影響
-  > 這是最高一層。除了會「使用 AI」，還要能分析 AI-assisted engineering 帶來的長期影響，例如工程師角色是否改變、AI 是否造成過度依賴、責任如何分配、AI infrastructure 的能源與運算成本、資料中心、安全、偏見、隱私及社會影響。換句話說，老師不只希望你成為 AI 使用者，而是能站在更高層次思考：「導入 AI 之後，整個軟體工程生態發生了什麼改變？」
-
-
+  > 這是最高一層。除了會「使用 AI」，還要能分析 AI-assisted engineering（AI 輔助工程） 帶來的長期影響，例如工程師角色是否改變、AI 是否造成過度依賴、責任如何分配、AI infrastructure（AI 基礎設施） 的能源與運算成本、資料中心、安全、偏見、隱私及社會影響。換句話說，老師不只希望你成為 AI 使用者，而是能站在更高層次思考：「導入 AI 之後，整個軟體工程生態發生了什麼改變？」
+**總結**
+<br>本課程整學期的核心目標，是讓學生從「會使用 AI」進一步成為「能負責任地與 AI 協作的軟體工程師」。首先學習 Prompt Engineering 與 AI-assisted engineering，將 AI 實際應用於程式開發、測試與文件工作；其次理解軟體工程基本原則，並以有效、安全且符合倫理的方式導入 AI；最後提升到系統與社會層次，分析 AI 對工程師角色、基礎設施、隱私、安全、責任與社會的長期影響。核心可歸納為：Apply AI、Integrate AI、Analyze AI。
+  > - Level 1：Use AI：<br>學會 Prompt Engineering 與 AI-assisted development。
+  > - Level 2：Engineer with AI<br>把 AI 正確、有效、負責任地整合進 Software Engineering。
+  > - Level 3：Think about AI systems<分析 AI 工程對技術、組織、基礎設施與社會的影響。>
+考試或報告時，建議特別記住三組關鍵詞：Apply → Integrate → Analyze 也就是：應用 AI → 整合 AI → 評估 AI 的影響。
 
 
 > - So let's take the whole picture of the whole course. <br>因此,讓我們把整個航道的全貌照一照.
