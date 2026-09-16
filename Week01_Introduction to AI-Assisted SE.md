@@ -1,6 +1,10 @@
 # Week01_Introduction to AI-Assisted SE
-- 教學資源：[
+- 教學資源：
+  - [
 Introduction to AI-Assisted SE (Week 1) - Lecture Slides](https://github.com/414551016/AI-in-the-Loop-in-Software-Project-Cycle/blob/main/Lecture/week1-Introduction-260907.pdf)
+  - [
+人工智慧輔助軟體工程入門（第一週）- 自學模組](https://csic30216-fall26.denniswang.net/self-paced/week1/)
+  - [圖解變形金剛](https://jalammar.github.io/illustrated-transformer/)
 
 ### Week 1 課堂逐字稿
 <div align="left" >
