@@ -421,3 +421,58 @@ Introduction to AI-Assisted SE (Week 1) - Lecture Slides](https://github.com/414
   <img src="./Lecture/Week01/Week01-60.jpg" width="50%">
 </div>
 
+## slide：61
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-61.jpg" width="50%">
+</div>
+
+## slide：62
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-62.jpg" width="50%">
+</div>
+
+## slide：63
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-63.jpg" width="50%">
+</div>
+
+## slide：64
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-64.jpg" width="50%">
+</div>
+
+## slide：65
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-65.jpg" width="50%">
+</div>
+
+## slide：66
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-66.jpg" width="50%">
+</div>
+
+## slide：67
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-67.jpg" width="50%">
+</div>
+
+## slide：68
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-68.jpg" width="50%">
+</div>
+
+## slide：69
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-69.jpg" width="50%">
+</div>
+
+## slide：70
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-70.jpg" width="50%">
+</div>
+
+## slide：71
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-71.jpg" width="50%">
+</div>
+
