@@ -2,7 +2,7 @@
 
 
 ### Week 1 課堂逐字稿
-<div align="left" style="border:1px solid">
+<div align="left" style="border:1px solid red;">
   <img src="./Lecture/Week01-02.jpg" width="33%" style="border:1px solid">
 </div>
 
