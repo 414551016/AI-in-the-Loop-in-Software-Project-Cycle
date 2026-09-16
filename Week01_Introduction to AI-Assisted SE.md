@@ -3,7 +3,7 @@
 
 ### Week 1 課堂逐字稿
 <div align="left" >
-  <img src="./images/翠蘆莉-01.jpg" width="33%">
+  <img src="./Week01/Week01-02.jpg" width="33%">
   <img src="./images/翠蘆莉-02.jpg" width="33%">
   <img src="./images/翠蘆莉-03.JPG" width="33%">
 </div>
