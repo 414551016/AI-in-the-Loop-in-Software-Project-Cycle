@@ -7,6 +7,12 @@
   <img src="./Lecture/Week01-02.jpg" width="33%" style="border:1px solid">
 </div></div>
 
+<div align="left">
+<div style="display:inline-block; padding:4px; border:2px solid black;">
+./Lecture/Week01-03.jpg
+</div>
+</div>
+
 #### [00:00:38–00:00:42]
 > Hi, can everyone hear me?<br>嗨,大家能聽到我嗎?
 
