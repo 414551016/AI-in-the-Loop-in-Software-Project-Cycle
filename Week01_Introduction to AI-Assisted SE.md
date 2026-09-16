@@ -15,6 +15,7 @@ Introduction to AI-Assisted SE (Week 1) - Lecture Slides](https://github.com/414
 [00:00:38–00:02:27]
 > Hi, can everyone hear me?<br>嗨,大家能聽到我嗎?
 <hr>
+
 #### slide：3
 <div align="left" >
   <img src="./Lecture/Week01/Week01-03.jpg" width="50%">
