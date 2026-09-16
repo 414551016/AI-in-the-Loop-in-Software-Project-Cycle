@@ -2,7 +2,8 @@
 
 
 ### Week 1 課堂逐字稿
-#### **[00:00:38–00:00:42]**Hi, can everyone hear me?
+#### [00:00:38–00:00:42]
+> Hi, can everyone hear me?
 > 嗨,大家能聽到我嗎?
 
 
