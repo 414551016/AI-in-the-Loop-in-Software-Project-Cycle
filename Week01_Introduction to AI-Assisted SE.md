@@ -56,7 +56,23 @@
   >   - 是否修改了不該修改的地方？
   >   - 是否用了錯誤假設？
   >   - 是否真的驗證過結果？
-
+  > - Knowing when to take back control：知道何時要取回控制權
+  > <br>AI Agent 可以有自主能力，但工程師仍然必須知道：哪些事情可以交給 AI，哪些事情不能讓 AI 自己決定。
+  > <br>例如：AI 可以自行：
+  >   - 整理程式碼
+  >   - 產生測試
+  >   - 查找 bug
+  >   - 草擬文件
+  > 但若涉及：工程師就應該重新介入。
+  >   - 刪除重要資料
+  >   - 修改 production system
+  >   - 安全權限
+  >   - 資料庫 migration
+  >   - 關鍵架構決策
+  >   - 不可逆操作
+  > 因此 Agentic AI 的核心不是：「AI 越自主越好」。而是：適當授權 + 持續監督 + 必要時人工接管。
+- 2. Understand the course structure, components, expectations, and resources
+     
 
 > - So the learning objective for today is <br>所以今天的學習目標是
 > - I want everybody to be able to describe <br>我希望每個人都能描述
