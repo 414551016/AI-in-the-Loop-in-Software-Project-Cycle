@@ -100,12 +100,13 @@
   > <br>它不是單純把 Prompt 抄下來，而是紀錄：我原本的 Intent ↓ 我寫出的 Prompt ↓ AI 怎麼理解 ↓ AI 做了哪些自行決定 ↓ Output 是否符合需求 ↓ 我修改什麼 ↓ 結果是否改善
   > <br>因此 Prompt Engineering Log 其實是一種：工程實驗紀錄，而不是「聊天紀錄」。
 
-**這一頁真正的核心邏輯***
+**這一頁真正的核心邏輯**
 <br>我建議你把這頁記成下面這個架構：
 <div align="left" >
   <img src="./Lecture/Week01/Week01-06-1.jpg">
 </div>
 
+**總結：在 AI Agent 時代，工程師的工作不只是「下 Prompt」，而是要清楚定義意圖、監督 AI 的決策與執行過程，並在 AI 偏離目標或風險過高時重新取得控制權。**
 
 > - So the learning objective for today is <br>所以今天的學習目標是
 > - I want everybody to be able to describe <br>我希望每個人都能描述
