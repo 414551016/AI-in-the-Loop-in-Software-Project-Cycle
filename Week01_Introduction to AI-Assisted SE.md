@@ -124,8 +124,20 @@
 
 #### [00:05:32–00:05:36]
 <div align="left" >
-  <img src="./Lecture/Week01/Week01-07.jpg" width="33%">
+  <img src="./Lecture/Week01/Week01-07.jpg" width="50%">
 </div>
+
+這張投影片是在說明這門課整學期的 Learning Objectives（學期學習目標）。和上一張「Today」相比，上一張是在講單堂課要學什麼；這一張則是在說明整學期修完之後，你應該具備哪些能力。
+<br>這三個目標可以理解成三個層次：會使用 AI → 會把 AI 正確整合進軟體工程 → 能評估 AI 對更大系統與社會的影響。
+- Articulate and apply effective practices of AI-assisted engineering and prompt engineering in software development<br>在軟體開發中闡述並應用 AI 輔助工程與提示詞工程的有效實踐
+  > 重點是：不只知道 Prompt Engineering（提示詞工程）是什麼，而是要能實際運用在軟體開發中。你需要學會如何清楚表達需求、設計 Prompt、使用 AI 協助寫程式、除錯、測試、文件撰寫與需求分析，並判斷 AI 的輸出是否符合工程需求。這裡的關鍵字是 Articulate（闡述） + Apply（應用），也就是「能說明，也能實作」。
+- Understand core software engineering concepts…and how to effectively and ethically incorporate AI<br>理解軟體工程的核心概念…以及如何有效且合乎道德地融入 AI 技術
+  > 這表示課程並不是「AI 工具使用課」，而仍然以 Software Engineering 為核心。你需要理解需求分析、版本控制、測試、Code Review、團隊協作、文件化、軟體品質等基本工程方法，再思考 AI 應該放在哪個位置。另一個重點是 Ethically（符合倫理地），包括隱私、著作權、資料來源、AI hallucination、責任歸屬與安全問題。
+- Analyze the broader implications and societal impacts of AI-assisted engineering and its infrastructure<br>分析 AI 輔助工程及其基礎設施的深遠意義與社會影響
+  > 這是最高一層。除了會「使用 AI」，還要能分析 AI-assisted engineering 帶來的長期影響，例如工程師角色是否改變、AI 是否造成過度依賴、責任如何分配、AI infrastructure 的能源與運算成本、資料中心、安全、偏見、隱私及社會影響。換句話說，老師不只希望你成為 AI 使用者，而是能站在更高層次思考：「導入 AI 之後，整個軟體工程生態發生了什麼改變？」
+
+
+
 
 > - So let's take the whole picture of the whole course. <br>因此,讓我們把整個航道的全貌照一照.
 > - The semester, we want you to be able to articulate and apply effective practices of AI-assisted engineering and prompt engineering in software development. <br>學期,我們要你講清楚，應用AI輔助工程的有效做法，並迅速進行軟體開發工程。
