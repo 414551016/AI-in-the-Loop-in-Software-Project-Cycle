@@ -102,6 +102,9 @@
 
 **這一頁真正的核心邏輯***
 <br>我建議你把這頁記成下面這個架構：
+<div align="left" >
+  <img src="./Lecture/Week01/Week01-06-1.jpg" width="50%">
+</div>
 
 
 > - So the learning objective for today is <br>所以今天的學習目標是
