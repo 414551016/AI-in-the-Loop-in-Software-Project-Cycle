@@ -3,14 +3,14 @@
 
 ### Week 1 課堂逐字稿
 <div align="left" >
-  <img src="./Lecture/Week01-02.jpg" width="33%">
+  <img src="./Lecture/Week01/Week01-02.jpg" width="33%">
 </div>
 
 #### [00:00:38–00:00:42]
 > Hi, can everyone hear me?<br>嗨,大家能聽到我嗎?
 
 <div align="left" >
-  <img src="./Lecture/Week01-03.jpg" width="33%">
+  <img src="./Lecture/Week01/Week01-03.jpg" width="33%">
 </div>
 
 <div align="left" >
