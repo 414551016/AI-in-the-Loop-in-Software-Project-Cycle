@@ -3,7 +3,7 @@ Prompt：請說明本教學重點內容，及你的看法與總結
 ### Week 1 課堂逐字稿
 #### slide：1
 <div align="left" >
-  <img src="./Lecture/Week03/SD1_page-0001.jpg" width="50%">
+  <img src="./Lecture/Week03/week3-AI-In-Teamwork-260921_page-0004.jpg" width="50%">
 </div>
 
 本次教學為《AI 導入軟體專案流程》課程的第一週內容，重點在於建立「AI 輔助軟體工程」的核心觀念：
