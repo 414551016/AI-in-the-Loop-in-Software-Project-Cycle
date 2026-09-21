@@ -32,12 +32,6 @@ Prompt：請說明本教學重點內容，及你的看法與總結
   <img src="./Lecture/Week03/week3-AI-In-Teamwork-260921_page-0005.jpg" width="50%">
 </div>
 
-
-## slide：5
-<div align="left" >
-  <img src="./Lecture/Week03/week3-AI-In-Teamwork-260921_page-0005.jpg" width="50%">
-</div>
-
 ## slide：6
 <div align="left" >
   <img src="./Lecture/Week03/week3-AI-In-Teamwork-260921_page-0006.jpg" width="50%">
