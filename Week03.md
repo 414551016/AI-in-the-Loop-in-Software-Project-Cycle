@@ -27,5 +27,42 @@ Prompt：請說明本教學重點內容，及你的看法與總結
   <br>對初學者而言，這門課的定位非常精準且具前瞻性。它不單純教導如何使用 AI 工具，而是培養「如何成為能與 AI 協同工作的專業工程師」。實作課設計直接讓學生體驗提示詞過於模糊導致的溝通落差，學習將隱性假設具體化，是建立關鍵批判性思維極佳的起步。
 
 
+## slide：5
+<div align="left" >
+  <img src="./Lecture/Week03/week3-AI-In-Teamwork-260921_page-0005.jpg" width="50%">
+</div>
+
+
+## slide：5
+<div align="left" >
+  <img src="./Lecture/Week03/week3-AI-In-Teamwork-260921_page-0005.jpg" width="50%">
+</div>
+
+## slide：6
+<div align="left" >
+  <img src="./Lecture/Week03/week3-AI-In-Teamwork-260921_page-0006.jpg" width="50%">
+</div>
+
+## slide：7
+<div align="left" >
+  <img src="./Lecture/Week03/week3-AI-In-Teamwork-260921_page-0007.jpg" width="50%">
+</div>
+
+## slide：8
+<div align="left" >
+  <img src="./Lecture/Week03/week3-AI-In-Teamwork-260921_page-0008.jpg" width="50%">
+</div>
+
+## slide：9
+<div align="left" >
+  <img src="./Lecture/Week03/week3-AI-In-Teamwork-260921_page-0009.jpg" width="50%">
+</div>
+
+## slide：10
+<div align="left" >
+  <img src="./Lecture/Week03/week3-AI-In-Teamwork-260921_page-00010.jpg" width="50%">
+</div>
+
+
 
 
