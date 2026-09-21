@@ -1,7 +1,22 @@
 
 Prompt：請說明本教學重點內容，及你的看法與總結
 ### Week 1 課堂逐字稿
-#### slide：1
+## slide：1
+<div align="left" >
+  <img src="./Lecture/Week03/week3-AI-In-Teamwork-260921_page-0001.jpg" width="50%">
+</div>
+
+## slide：2
+<div align="left" >
+  <img src="./Lecture/Week03/week3-AI-In-Teamwork-260921_page-0002.jpg" width="50%">
+</div>
+
+## slide：3
+<div align="left" >
+  <img src="./Lecture/Week03/week3-AI-In-Teamwork-260921_page-0003.jpg" width="50%">
+</div>
+
+## slide：4
 <div align="left" >
   <img src="./Lecture/Week03/week3-AI-In-Teamwork-260921_page-0004.jpg" width="50%">
 </div>
