@@ -13,9 +13,10 @@ According to the DORA 2025 report, what is described as AI's primary role in sof
 - c. A tool that produces uniform improvements regardless of team maturity / 無論團隊成熟度如何都能帶來一致改進的工具
 - d. A cost-cutting measure with no effect on team performance / 對團隊績效沒有影響的降低成本措施
 ### Correct Answer / 正確答案：B
-Reason & Explanation / 說明理由：
-<br>The report's central finding, repeated throughout, is that AI functions as an amplifier — it makes high-performing organizations even stronger and struggling organizations' dysfunctions more visible, rather than fixing underlying problems on its own.
+The report's central finding, repeated throughout, is that AI functions as an amplifier — it makes high-performing organizations even stronger and struggling organizations' dysfunctions more visible, rather than fixing underlying problems on its own.
 > 該報告貫穿始終的核心觀點是：人工智慧扮演「放大器」的角色——它能讓表現優異的組織如虎添翼，也能讓陷入困境的組織其弊病更加顯露無遺，而無法憑一己之力解決根本性問題。
+
+Reason & Explanation / 說明理由：
 - 核心概念 (Core Concept):
   <br>DORA 2025 報告（Accelerate State of DevOps / State of AI-assisted Software Development）指出，AI 工具並非萬靈丹，而是一個「放大器 (Amplifier)」。
 - 對高效團隊的影響 (Impact on High-Performing Teams):
@@ -31,9 +32,10 @@ The DORA 2025 report found that AI adoption is now nearly universal (90% of resp
 - c. A majority report some degree of confidence in AI output, while a meaningful minority remain more reserved or skeptical / 多數人對 AI 產出表示一定程度的信心，但仍有相當比例的少數人保持保留或懷疑態度
 - d. Trust could not be measured because too few developers use AI regularly / 無法衡量信任度，因為定期使用 AI 的開發者太少
 ### Correct Answer / 正確答案：C
-Reason & Explanation / 說明理由：
 <br>The report found a nuanced trust landscape: a majority expressed some degree of confidence in AI output, while roughly 30% reported more reserved or skeptical views. High adoption and measured trust coexist — the report describes this "trust but verify" pattern as a sign of mature adoption, not a contradiction.
 > 該報告揭示了一種微妙的信任格局：儘管大多數人對人工智慧的輸出結果抱有一定程度的信心，但約有30%的人持更為審慎或懷疑的態度。高普及率與審慎的信任態度並存－報告將這種「信任但需驗證」的模式視為應用走向成熟的標誌，而非一種矛盾現象。
+
+Reason & Explanation / 說明理由：
 - 報告數據與現象 (Report Data & Paradox):
   <br>DORA 2025 報告（State of AI-assisted Software Development）揭示了一個「信任悖論 (Trust Paradox)」。儘管 AI 採用率高達 90%，且多數開發者肯定其對產出與效率的正面幫助，但信任度並未達到 100%。
 - 具體比例 (Specific Percentages):
@@ -72,6 +74,7 @@ According to the DORA AI Capabilities Model, what effect does a "clear and commu
 ### Correct Answer / 正確答案：C
 DORA's research found that when developers know what AI use is expected and permitted, AI's positive effects on individual effectiveness and organizational performence are amplified, and AI's otherwise neutral effect on friction becomes a reduction in friction. This is the direct empirical reason this week's lab has you write down and agree on a team AI usage guideline — it's not just good practice, it's a factor shown to imprve outcomes.
 > DORA 的研究發現，當開發人員明確了解 AI 的預期用途及獲準的使用方式時，AI 對個人效能和組織績效的正面影響會得到增強，而原本對工作流程阻力（friction）僅有中性影響的 AI，也會轉而起到降低阻力的作用。這正是本週實驗要求大家製定並達成一致的團隊 AI 使用準則的直接實證依據——這不僅是一種良好的實踐，更已被證實是能夠改善成效的關鍵因素。
+
 Reason & Explanation / 說明理由：
 - 核心研究發現 (Core Research Finding):
   <br>DORA 2025 報告發布的 DORA AI Capabilities Model（DORA AI 能力模型） 提出，「明確且溝通良好的 AI 立場 (Clear and communicated AI stance)」是解鎖 AI 價值的七大核心能力之一。
