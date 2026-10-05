@@ -99,10 +99,50 @@
 - 一份 Word 或純文字文件，用來記錄過程。
 
 這次不必為了作業先安裝 Python 或設定 API。 講義要求的主要成果是**提示詞、AI 輸出及分析**；若課程網站的 Lab guide 另有工具要求，再依它操作。
+```text
+Week 5 Lab — Writing Prompts Well
 
+學生 A：姓名、學號
+學生 B：姓名、學號
 
+一、學生 A 的個人實驗
+  1. Step 0：規格
+  2. Zero-shot
+  3. Few-shot
+  4. Chain-of-thought
+  5. Self-correction
 
+二、學生 B 的個人實驗
+  1. Step 0：規格
+  2. Zero-shot
+  3. Few-shot
+  4. Chain-of-thought
+  5. Self-correction
 
+三、共同認可的 docstring
+四、修改紀錄
+五、共同選擇理由（4–6 句）
+```
+注意：兩人各做四種，不是各分配兩種。
+
+## 步驟 2：先看懂指定函式
+講義提供的是：
+```Python
+def process_records(records, threshold):
+    result = []
+    seen = {}
+    for r in records:
+        key = r.get('id')
+        val = r.get('score', 0)
+        if key in seen:
+            continue
+        seen[key] = True
+        if val >= threshold:
+            result.append({'id': key, 'score': val, 'status': 'pass'})
+        else:
+            result.append({'id': key, 'score': val, 'status': 'fail'})
+    return result
+```
 
 
 
