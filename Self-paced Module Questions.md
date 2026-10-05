@@ -1,3 +1,9 @@
+## 教學資源：
+## 練習題：
+  - [Week 3 - Self-paced Module Questions](#week-3---self-paced-module-questions)
+
+
+
 ## 第 1 題：
 ### Correct Answer / 正確答案：C
 Reason & Explanation / 說明理由：
