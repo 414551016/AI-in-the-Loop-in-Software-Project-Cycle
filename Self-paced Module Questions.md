@@ -84,6 +84,87 @@ Reason & Explanation / 說明理由：
   <br>研究以高度確定性證實，當組織擁有清晰且落實溝通的 AI 立場時，能顯著放大 AI 對於「個人成效 (Individual Effectiveness)」、「軟體交付吞吐量 (Throughput)」以及「組織整體績效 (Organizational Performance)」的正面影響。
 
 
+# Week 5 - Self-paced Module Questions
+## 第 1 題：
+According to Weng, which sequence best describes how APE finds an instruction?
+> 根據 Lilian Weng 的文章，下列哪一個流程最能描述 APE（自動提示工程師）如何尋找指令？
+- a. Humans write several candidate instructions, the model ranks them, and the top-ranked one is used.
+  > 由人類撰寫數個候選指令，模型對其進行排序，並使用排序最高的指令。
+- b. The model is shown a few input-output demonstrations and generates candidate instructions, each candidate is scored on a training set, and the best candidates are refined with semantically similar variants.
+  > 向模型展示少量的輸入-輸出範例並生成候選指令，每個候選指令會在訓練集上進行評分，接著透過語意相似的變體對最佳候選指令進行提煉與優化。
+- c. The model is fine-tuned on demonstrations, and the instruction is extracted from its updated weights.
+  > 模型在範例上進行微調，並從其更新後的權重中擷取出指令。
+- d. The same prompt is sampled many times and the majority-vote output is used as the instruction.
+  > 同一個提示被重複採樣多次，並將多數表決的輸出結果作為指令。
+### Correct Answer / 正確答案：B
+理由說明 (Reasoning & Explanation)
+<br>根據 Lilian Weng 在《Prompt Engineering》一文中對 APE (Automatic Prompt Engineer, Zhou et al. 2022) 的介紹，APE 將指令搜尋視為一個自然語言優化問題（Natural Language Optimization Problem），其標準運作機制包含以下三個核心步驟：
+- 候選指令生成 (Candidate Generation)：給予模型少量的輸入與輸出範例（Input-Output Demonstrations），讓 LLM 發揮「提示生成器」的作用，自動產生一組候選指令。
+- 評分與評估 (Scoring)：將生成的每一個候選指令帶入訓練集中執行，並依據指定的評分函數（Score Function，如零樣本準確率）來評估該指令的表現優劣。
+- 語意變體提煉 (Resampling / Refinement)：選擇評分較高的優質指令，透過蒙地卡羅搜尋或讓 LLM 生成語意相似的變體（Semantically Similar Variants），對搜尋空間進行更深入的優化與提煉，最終選出最佳指令。
+- Generate candidates from demonstrations. <br>根據示範產生候選指令。 模型先看到幾組「輸入 → 正確輸出」，再推測什麼指令能讓模型完成這項任務。
+- Score each candidate on the training set.<br>在訓練集上評估各候選指令。 實際測試使用各指令時的表現，給予分數，以找出較好的候選指令。
+- Refine strong candidates with semantically similar variants.<br>以語意相近的變體改良優良候選指令。 保留原本意思、改變表達方式，再評估是否能得到更好的效果。
+
+## 第 2 題：
+Question: You sample 10 solutions to a programming task at temperature 0.8, and the task comes with a unit test suite. According to Weng, what is the most direct way to choose among the samples?
+> 題目： 你在 temperature 0.8 下對一個程式任務採樣了 10 個解答，且該任務附帶單元測試套件。根據 Lilian Weng 的文章，在這些採樣解答中做出選擇最直接的方法為何？
+- a. Take the majority vote over the 10 code strings（對這 10 個程式碼字串進行多數表決/多數決。）
+- b. Run each solution against the unit tests and keep one that passes（執行每個解答並進行單元測試，保留通過測試的那一個。）
+- c. Ask the model which of its 10 solutions it prefers（詢問模型它偏好自己的哪一個解答。）
+- d. Choose the longest solution, since it is most likely to be complete（選擇最長的解答，因為它最可能是完整無缺的。）
+### Correct Answer / 正確答案：B
+理由說明 (Reasoning & Explanation)
+<br>根據 Lilian Weng 在《Prompt Engineering》文章中關於 Self-Consistency Sampling（自洽性採樣） 的章節討論：
+- 基本概念： 在設置採樣溫度（temperature > 0）時，模型會針對同一問題生成多個不同的解答候選。
+- 選出最佳解答的標準： 選擇最佳候選解答的標準會因任務類型而異。一般情況下（如數學推理題），會採取多數表決（majority vote）。
+- 驗證簡單的任務（如程式題）： 對於容易驗證的任務（For tasks that are easy to validate），例如附帶單元測試的程式設計問題，最直接且有效的方法是直接透過直譯器/執行環境執行每個解答，並使用單元測試（unit tests）來驗證其正確性（Run through the interpreter and verify the correctness with unit tests）。
+
+因此，選項 b 是根據 Weng 文章中最直接且精確的篩選方式。
+
+## 第 3 題：
+Question: Weng's description of APE scores candidate instructions on a training dataset. Which additional step does the module recommend before deploying the winning instruction, and why?
+> 題目： Lilian Weng 對 APE 的描述指出它會在訓練資料集上對候選指令進行評分。在上線/部署該最佳指令之前，模組建議增加哪一個額外步驟？原因為何？
+- a. Rerun APE with a larger model, because larger models always generate better instructions（使用更大的模型重新執行 APE，因為更大的模型總能生成更好的指令。）
+- b. Test the winning instruction on held-out examples that were not used to generate or score candidates, because the top-scoring instruction may be overfit to the examples it was selected on（在未用於生成或評分候選指令的保留範例/測試集上測試最佳指令，因為得分最高的指令可能會對其選出的範例產生過擬合 overfitting。）
+- c. Have a human rewrite the winning instruction, because model-generated instructions are never deployable（由人工重寫最佳指令，因為模型生成的指令永遠無法直接部署。）
+- d. Run self-consistency on the winning instruction, because majority voting removes overfitting（對最佳指令執行自洽性採樣，因為多數表決可以消除過擬合。）
+### Correct Answer / 正確答案：B
+理由說明 (Reasoning & Explanation)
+<br>根據 Lilian Weng 在《Prompt Engineering》一文中對 APE (Automatic Prompt Engineer) 的詳細分析：
+- 過擬合問題（Overfitting）： APE 在搜尋最佳指令時，會在訓練集（Training Dataset）上計算評分並挑選出高分指令。這與傳統機器學習訓練類似，最高分的指令很有可能對訓練集中的特定範例「過擬合」（Overfit）。
+- 驗證與評估（Evaluation on Held-out Test Set）： 為了確保找到的指令具備泛化能力（Generalization），模組與 APE 的研究方法均建議將選出的最佳指令放在未參與生成與評分的保留測試集（Held-out Examples/Test Set）上進行評估與測試，確認其真實效果後才正式部署。
+
+因此，選項 b 正確說明了部署前的額外測試步驟及其背後防止過擬合的原因。
+
+## 第 4 題：
+Question: Weng presents majority vote as the general way to pick a self-consistency answer. Under which condition does the module warn that it gives false confidence?
+> 題目： Weng 指出多數決（majority vote）是挑選自洽性（self-consistency）解答的通用方法。但在何種狀況下，模組有提出警告：多數決可能會給出「錯誤的信心 (false confidence)」？
+- a. When the sampled outputs are long（當採樣出的輸出解答太長時）
+- b. When temperature is set above 0.7（當採樣溫度設置於 0.7 以上時）
+- c. When the model makes the same systematic error on most samples, so the wrong answer is the majority（當模型在大多數採樣中犯了相同的系統性錯誤，導致錯誤答案佔據了多數時）
+- d. When fewer than 20 samples are drawn（當採樣的數量少於 20 個時）
+### Correct Answer / 正確答案：C
+理由說明 (Reasoning & Explanation)
+<br>根據 Lilian Weng 在《Prompt Engineering》一文中對 Self-Consistency（自洽性採樣, Wang et al. 2022） 的討論：
+- 基本概念與預設做法： 自洽性採樣會以較高的溫度採樣多條不同的推理路徑（Reasoning paths），通常採用多數表決（majority vote）來決定最終的答案。
+- 多數決的陷阱（False Confidence）： 文章明確提醒與警告，多數決的前提是模型的錯誤是隨機分散的。如果模型存在系統性偏誤或系統性錯誤（systematic error），模型可能會在多次採樣中重複犯下相同的邏輯錯誤。
+- 結果： 當相同的錯誤解答在採樣中出現頻率最高時，多數決就會選出該錯誤答案，並給出「高共識度」的假象（false confidence），讓使用者誤以為該答案高度正確。
+
+因此，選項 c 精確描述了模組警告多數決會帶來錯誤信心的具體條件。
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
