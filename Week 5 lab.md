@@ -3,10 +3,19 @@
 > <br>每人都要完成四種技巧，最後兩人合交一份文件。截止時間為 2026 年 10 月 7 日（星期三）23:59，繳交到 E3 的「Week 5 Lab」。
 
 以下依據講義第 55–64 頁整理：[week5-prompt-engineer-1-261005.pdf](https://github.com/414551016/AI-in-the-Loop-in-Software-Project-Cycle/blob/main/Lecture/week5-prompt-engineer-1-261005.pdf)
-## slide：55 -2
+## slide：54 -64
 <div align="left" >
-  <img src="./Lecture/SD4/SD4_page-0001.jpg" width="49%">
-  <img src="./Lecture/SD4/SD4_page-0002.jpg" width="49%">
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0054.jpg" width="49%">
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0055.jpg" width="49%">
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0056.jpg" width="49%">
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0057.jpg" width="49%">
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0058.jpg" width="49%">
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0059.jpg" width="49%">
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0060.jpg" width="49%">
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0061.jpg" width="49%">
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0062.jpg" width="49%">
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0063.jpg" width="49%">
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0064.jpg" width="49%">
 </div>
 
 
