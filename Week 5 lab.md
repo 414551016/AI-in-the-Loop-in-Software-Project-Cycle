@@ -4,6 +4,8 @@
 
 以下依據講義第 54–64 頁整理：[week5-prompt-engineer-1-261005.pdf](https://github.com/414551016/AI-in-the-Loop-in-Software-Project-Cycle/blob/main/Lecture/week5-prompt-engineer-1-261005.pdf)
 ## slide：54 -64
+> 1. 請將本教學內容英/中翻譯比對。
+> <br>2. 請說明本教學重點內容及你的看法，最後以250字內總結
 <div align="left" >
   <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0054.jpg" width="49%">
   <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0055.jpg" width="49%">
