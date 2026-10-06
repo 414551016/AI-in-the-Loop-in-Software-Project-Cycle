@@ -270,6 +270,30 @@ The function that we're working on / 我們即將處理與分析的目標函式
   - 本簡報提供 Lab 5 的測試目標函式 process_records[cite: 4]。該函式包含「依 ID 去重（僅留首筆）」與「缺少分數預設為 0」等隱性邏輯[cite: 4]。教學要求學生先理解其參數、傳回值與潛在陷阱[cite: 4]，並將此單一函式套用於四種提示技巧進行對比。
   <br>此設計體現了嚴謹的科學實驗精神。透過固定測試標的[cite: 4]，能客觀評估不同 Prompt 是否能誘發模型抓出隱蔽的邊界條件。這證明了 Prompt Engineering 不僅是文字撰寫，更是建立在工程師對程式邏輯精準掌握上的質量控制過程。
 
+## slide：58
+<div align="left" >
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0058.jpg" width="50%">
+</div>
+
+- Your task: get the model to write a docstring for process_records that meets your specification. You write the prompts, the model writes the docstring, and you judge it.
+  > 你的任務：讓模型為 process_records 撰寫符合你規格書（Specification）的 Docstring。由你撰寫提示詞、模型撰寫 Docstring，並由你進行評估與審查
+- You produce:
+  > 你需產出的成果
+  - Four docstrings — one per technique, each judged against your own specification. At the end, your pair picks one to approve
+    > 四份 Docstring 每一種提示技巧各一份，且每份皆需根據你自訂的規格書進行評估。最後，你與夥伴將共同挑選並通過（Approve）其中一份最佳版本
+
+- 教學重點內容：
+  - 明確的角色分工（Human-in-the-loop）：工程師負責「撰寫提示詞（Prompting）」與「品質審查（Judging）」，AI 則負責執行「內容生成（Docstring Generation）」。工程師是最終品質的掌控者與決策者。
+  - 基準化品質比對：必須產出四份使用不同提示技巧（Zero-shot, Few-shot, CoT, Self-correction）生成的 Docstring，且每一份都必須對照事先寫好的規格書進行客觀檢驗與評分。
+  - 同儕審查與共識裁決（Pair Approval）：實驗最後階段由雙人小組共同討論，從四份產出中審查並核准（Approve）一份最佳版本，模擬了現實團隊開發中的 Pull Request (PR) 審核機制。
+- 個人看法：
+  - 本頁簡報揭示了現代 AI 輔助開發的核心範式轉變（Paradigm Shift）：
+    - 從「隨機 Prompt」轉向「測試驅動開發（TDD）概念」：把「Specification」當作 Unit Test，AI 產出的 Docstring 就是被測試的程式碼。只有預先建立檢驗標準，才能避免人類審查時產生「看起來很有道理就給過」的主觀盲點。
+    - 培養 Code Steward（程式碼審查者）的心態：在團隊開發中，讓 AI 生成程式碼或文件並不難，難在如何進行高質量的 Gatekeeping。透過小組審查並核准單一最佳版本的流程，能有效防止低品質或遺漏邊界條件的 AI 內容進入程式庫。
+  - 本簡報明確規範 Lab 5 的具體產出任務。學生需設計 Prompt 引導 AI 為 process_records 撰寫 Docstring，並利用四大提示技巧各生成一份結果，再依自訂規格書進行客觀評估。最後由雙人小組共同討論並核准一份最佳版本。
+  <br>此任務的核心意義在於實踐「規範驅動評估（Specification-Driven Evaluation）」。將軟體工程中的 TDD 與 Code Review 精神融入 Prompt 實作，強調開發者的價值在於精準定義意圖與嚴謹驗證品質，而非盲目信任 AI 產出，建立負責任且可持續維護的 AI 協作開發模式。 
+
+
 <div align="left" >
   
   <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0058.jpg" width="49%">
