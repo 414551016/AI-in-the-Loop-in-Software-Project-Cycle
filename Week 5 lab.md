@@ -293,17 +293,170 @@ The function that we're working on / 我們即將處理與分析的目標函式
   - 本簡報明確規範 Lab 5 的具體產出任務。學生需設計 Prompt 引導 AI 為 process_records 撰寫 Docstring，並利用四大提示技巧各生成一份結果，再依自訂規格書進行客觀評估。最後由雙人小組共同討論並核准一份最佳版本。
   <br>此任務的核心意義在於實踐「規範驅動評估（Specification-Driven Evaluation）」。將軟體工程中的 TDD 與 Code Review 精神融入 Prompt 實作，強調開發者的價值在於精準定義意圖與嚴謹驗證品質，而非盲目信任 AI 產出，建立負責任且可持續維護的 AI 協作開發模式。 
 
-
+## slide：59
 <div align="left" >
-  
-  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0058.jpg" width="49%">
-  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0059.jpg" width="49%">
-  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0060.jpg" width="49%">
-  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0061.jpg" width="49%">
-  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0062.jpg" width="49%">
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0059.jpg" width="50%">
+</div>
+
+Step 0: write your specification first
+> 步驟 0：在開始撰寫 Prompt 前先制定你的規格書（Specification）
+- Before you write any prompt, write down what a good docstring for process_records must contain
+  > 在寫任何提示詞之前，先詳細列出一個優質的 process_records docstring 必須具備哪些內容
+- Five fields:
+  > 五大核心欄位：
+  - What it does: one sentence
+    > 功能摘要：用一句話說明其作用
+  - Parameters: name, type, purpose
+    > 參數說明：包含名稱、型態與用途
+  - Returns: structure, and what each field means
+    > 傳回值：資料結構及各欄位的具體涵義
+  - Edge cases: at least two behaviours a new engineer might not expect
+    > 邊界條件/極端狀況：至少列出兩項新進工程師可能意想不到的潛在行為
+  - Format: docstring style (e.g., Google) and a length limit
+    > 格式規範：指定的 Docstring 風格（例如 Google 格式）與長度限制
+- Keep it visible. Every output today is checked against it, field by field
+  > 將此規格書保持在視線範圍內。今天模型的每一次產出，都將對照這份規格書逐欄進行審查
+- 教學重點內容：
+  - 「生成前先規範」（Specify before you generate）：教學核心要求在調用任何 AI 模型之前，必須先完成「步驟 0」定義一份包含五大維度（功能、參數、傳回值、邊界條件、格式風格）的檢查清單（Specification）。
+  - 強調邊界條件（Edge Cases）的揭露：特別規範規格書中必須包含「至少兩項新進工程師可能意想不到的行為」。在 process_records 函式中，即為「僅採計首筆重複 ID」與「缺少分數時預設為 0」等隱性邏輯。
+  - 規格書即為單元測試（Unit Test）：將規格書作為客觀審查標準，每一次 AI 生成的結果，都必須逐欄（Field by field）進行核對評估。
+- 個人看法：
+  - 這張簡報體現了「AI 導入軟體專案流程」最關鍵的工程哲學——從盲目的「Vibe Coding」轉變為「規範驅動與客觀驗證」。
+    - 解決「主觀偏見」與「盲信 AI」：開發者若沒有預先寫下規格書，往往會在看到 AI 產出順暢、格式美觀的文字時，就誤以為結果是正確的（I look, it looks right）。有了結構化的 Specification 作為檢驗基準，才能進行無偏見的嚴謹審查。
+    - 工程師的核心價值轉移：在生成式 AI 時代，撰寫程式說明或初版代碼已漸趨自動化，工程師真正的專業不在於多會「通靈」寫 Prompt，而在於能否精準定義系統意圖、抓出邏輯盲點，並建立嚴格的驗證標準。
+  - 本簡報說明 Lab 5 的「步驟 0：撰寫規格書」。學生在調用 AI 前，必須先建立包含功能摘要、參數、傳回值、格式風格及至少兩項隱性邊界條件（Edge Cases）的五大維度清單。該規格書將作為後續所有 AI 產出逐欄核對的評估基準。
+  <br>此步驟實踐了「先規範、後生成」的軟體工程哲學。透過將規格書轉化為檢驗清單，防止開發者因 AI 產出流暢而產生盲目信任。這強調了現代工程師的核心價值在於精準定義意圖與嚴謹驗證品質，而非單純的文字嘗試。
+
+## slide：60
+<div align="left" >
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0060.jpg" width="50%">
+</div>
+
+Step 1: Try the prompts | 步驟 1：測試提示詞
+<br>The four techniques: what to do | 四種提示技巧：執行步驟與觀察重點
+|Technique（技巧）|What to write（撰寫內容）|What to look for（觀察重點）|
+|--|--|--|
+|零樣本提示（Zero-shot）|A plain instruction. No examples, no reasoning scaffold<br>純粹的指令。不提供範例，亦不提供推理架構。|Which decisions did the model make for you?<br>模型替你做了哪些隱性的決策？|
+|少樣本提示（Few-shot）|The three provided examples, then the task<br>提供課程給予的三個範例，隨後附上目標任務。|What to look for: Did format and edge-case coverage improve?<br>產出的格式規範與極端狀況（Edge-case）涵蓋率是否有所提升？|
+|思維鏈提示（Chain-of-thought）|Ask the model to work through the function step by step (what it does $\rightarrow$ parameters $\rightarrow$ return value $\rightarrow$ an edge case), then write the docstring<br>要求模型按步驟剖析該函式（功能說明 $\rightarrow$ 參數解析 $\rightarrow$ 傳回值 $\rightarrow$ 極端狀況），最後再撰寫 Docstring。|Did the reasoning surface the edge cases from your specification?<br>模型的推理過程是否成功揭露了你規格書中所要求的極端狀況？|
+|自我修正提示（Self-correction）|Generate $\rightarrow$ critique $\rightarrow$ revise<br>生成初版 $\rightarrow$ 進行批判審查 $\rightarrow$ 據此修正。 |Did the critique find a real problem, or approve everything?<br>模型進行的批判是否發現了真實問題，還是只是盲目盲從、全盤核准？|
+
+- 教學重點內容：
+  - 導向式的觀察指標（What to look for）：簡報為四種提示技巧設定了明確的診斷標準：
+    - Zero-shot：檢查模型的「隱性決策」（Implicit decisions），了解模型預設補全了哪些未說明的規範。
+    - Few-shot：檢驗「格式對齊與邊界覆蓋」，確認示範對輸出的約束力。
+    - Chain-of-thought：關注「推理過程顯化」，觀察邏輯拆解是否能引出藏在程式碼中的邊界陷阱。
+    - Self-correction：防範「盲目讚同陷阱」（Sycophancy），確認批判步驟是否能真正指出缺失並修正，而非空洞討好。
+  - 方法論式的 Prompt 設計（Diagnose & Select）：工程師並非隨機嘗試 Prompt，而是依據失敗類型（格式問題、推理問題、品質問題）選擇合適的提示技術。
+- 個人看法：
+  - 本張簡報精準反映了「AI 時代軟體工程師」的責任轉變——從撰寫語法轉為軌跡評估（Evaluating Trajectories）與問題診斷：
+    - 破解「能用就好」的迷思：多數初學者使用 Zero-shot 時只關注產出看似合理（Look right），但這張簡報提醒我們，Zero-shot 的危險在於「模型代你做了你沒寫出來的決策」，極易留下隱蔽 Bug。
+    - 避免空泛的 Self-correction：簡報特別指出 Self-correction 的觀察點在於「批判是否為真」。若提示詞缺乏明確的檢驗標準（Specification），模型只會給出「這看起來很好」的諂媚回應（Sycophantic approval），失去自我校正的意義。
+  - 本簡報說明 Lab 5 的「步驟 1：測試四種提示技巧」。對 Zero-shot 觀察模型代做的隱性決策；對 Few-shot 檢視格式與邊界涵蓋率；對 CoT 引導逐步推理以挖掘潛在陷阱；對 Self-correction 則著重檢驗批判是否實質發現問題，而非盲目討好。
+  <br>此流程體現了工程師評估 AI 產出軌跡（Trajectory）的核心能力。 Prompt Engineering 並非盲目嘗試，而是針對不同缺陷（格式、推理或品質問題）進行診斷並套用對應技術。唯有建立客觀診斷指標，才能確保 AI 產出的準確性、可預測性與可維護性。
+
+## slide：61
+<div align="left" >
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0061.jpg" width="50%">
+</div>
+
+What to record for each technique | 每一種提示技巧需要記錄的內容
+<br>Copy this template for each technique: | 請為每一種提示技巧複製並填寫此模板：
+
+- 教學重點內容：
+  - 結構化紀錄與實驗可複現性（Reproducibility）：教學要求學生使用統一的模板，精確記錄 Prompt 原文、完整模型輸出、最終萃取的 Docstring，以及 2–3 句的規格對比分析。這建立了嚴謹的 Prompt 工程日誌（Log）規範。
+  - 針對多步驟技巧（Self-correction）的完整軌跡記錄：特別規定技巧 4 需完整保留「初版生成 $\rightarrow$ 批判 $\rightarrow$ 最終修正」的全流程軌跡（Trajectories），而不只是留下最後結果。
+  - 精準且具體的缺陷診斷（Field-specific Diagnosis）：分析部分強調不能只寫「效果很好」等含糊評語，必須精準對照「步驟 0」的規格書欄位（如：漏掉 Edge cases 欄位或 Format 欄位出錯）。
+- 個人看法：
+  - 這張簡報呈現了 Prompt Engineering 中最關鍵的「實驗記錄與軌跡追蹤」機制：
+    - 實踐「LLM 軌跡評估」（Evaluating Trajectories）：在 AI 時代，工程師不能只看結果，必須審視 AI 產生結果的完整過程。透過保留 Prompt 原文與中介產出（如 Self-correction 的批判過程），開發者才能診斷出模型是在哪一步產生盲點或幻覺。
+    - 為後續作業與專案累積客觀資產：詳細且結構化的實驗日誌（Prompt Log），能讓工程師在複雜系統設計中找到「何時該用哪種提示技術」的數據支持，避免憑感覺或運氣（Vibe-based）進行開發。
+  - 本簡報規範了 Lab 5 各項提示技巧的實驗記錄模板。要求精確保存 Prompt 原文、完整模型輸出、萃取之 Docstring，並對照規格書欄位撰寫 2–3 句具體缺陷分析。針對 Self-correction 則須完整記錄生成、批判與修正的全流程軌跡。
+  <br>此模板實踐了「軌跡評估與結構化診斷」。透過保留中介歷程與精準對照規格欄位，能防止開發者泛泛而論，將提示詞測試轉化為可複現、可追溯且具備客觀檢驗標準的嚴謹軟體工程實驗。
+
+## slide：62
+<div align="left" >
+  <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0062.jpg" width="50%">
+</div>
+
+Step 2: Pair discussion (minutes 40–50) | 步驟 2：雙人組討論（第 40–50 分鐘）
+- Pair up with the person next to you and compare your four outputs (5 min)
+  > 與坐在你身旁的人配對，並比對各自產出的四個結果（5 分鐘）
+  - Discuss: if you were the code steward reviewing a PR that adds this docstring, which of your docstrings would you approve, and which would you send back?
+    > 討論：如果你是審核新增此 Docstring 的 PR（Pull Request）的 Code Steward（程式碼管理者），你會批准哪一個 Docstring？又會退回哪一個？
+- Pick one docstring your pair would approve (from either partner's four)
+  > 挑選一個你們這組會批准的 Docstring（從兩位組員共八個產出中選出一個）
+  - You may edit it; note what you changed
+    > 你們可以進行編輯修飾；但需記錄修改了哪些內容
+- Then write one shared paragraph (4–6 sentences) together explaining your choice (5 min). It must cover three things:
+  > 接著共同撰寫一段共享的說明文字（4–6 句話），解釋你們選擇該版本的理由（5 分鐘）。必須涵蓋以下三要素：
+  - Accuracy against your specifications
+    > 對照你們規格書的準確度
+  - Format consistency
+    > 格式一致性
+  - Cost, if this ran on thousands of functions
+    > 成本考量（若此 Prompt 需執行於數千個函式上）
+- There is no single right answer. Your reasoning is what matters
+  > 本題沒有唯一標準答案。重點在於你們的推理與思考過程。
+
+- 教學重點內容：
+  - 模擬真實軟體工程審核（Code Review & Governance）：教學引入「Code Steward」角色，要求學生以審核 Pull Request (PR) 的視角來評估 AI 產出的 Docstring，將單純的 Prompt 操作提升至團隊開發與品質把關的層次。
+  - 多維度評估決策架構：選擇最終批准的 Docstring 時，必須同時綜合評估 規格準確度（Accuracy）、格式一致性（Format Consistency） 與 大規模部署成本（Cost） 三大面向。
+  - 強調「工程權衡與推理（Trade-offs & Reasoning）」：教學明確指出「沒有唯一答案，推理過程才是重點」，培養工程師在面對不同 Prompt 技術（如 Zero-shot vs. Few-shot vs. CoT）時進行成本與效益取捨的能力。
+- 個人看法：
+  - 這張簡報完美呈現了「LLM-as-a-tool」到「Human-in-the-Loop AI 工程」的核心轉變：
+    - 實踐「評估軌跡與責任」責任制：在生成式 AI 時代，工程師的責任在於 Specify Intent（定義意圖） 與 Evaluate Trajectories（評估歷程）。透過 Peer Review 討論批准或退回 PR，能強迫學生站在決策者角度看待 AI 產出，避免盲目接受模型結果。
+    - 落實量化與成本意識：提示工程不只是讓 AI 吐出好結果，還必須考慮「規模化（Scale）」後的經濟成本（如：Chain-of-Thought 或 Self-correction 的 Token 消耗顯著較高）。這要求學生在追求高品質與控制運算成本之間找到平衡點。
+  - 本簡報規範了 Lab 5 步驟 2 的小組討論流程。學生需扮演 Code Steward 審核 PR，比對彼此的四種提示產出，挑選或修訂出最佳 Docstring，並合寫 4–6 句評估說明。理由需涵蓋規格準確度、格式一致性及大規模執行的 Token 成本。
+  <br>本環節核心在於培養「Human-in-the-Loop」的審核機制與工程權衡能力。強調沒有標準答案，而是要求學生在品質、規範與成本間做出合理的決策判斷。
+
+## slide：63
+<div align="left" >
   <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0063.jpg" width="49%">
   <img src="./Lecture/week5-prompt-engineer-1-261005/week5-prompt-engineer-1-261005_page-0064.jpg" width="49%">
 </div>
+
+What to submit | 作業繳交說明
+- Only one partner needs to upload -> E3 (Week 5 Lab)
+  > 每組僅需由一位組員上傳至 E3 平台（Week 5 Lab 區塊）
+  - Deadline: Wednesday, October 7, 23:59 Format: one document per pair (PDF, Word, or plain text), or paste into the E3 text box
+    > 截止時間：10 月 7 日（週三）23:59 格式：每組繳交一份文件（PDF、Word 或純文字檔），或直接貼入 E3 文字框
+- Both names and student IDs, at the top of the document
+  > 文件頂端須註明兩位組員的姓名與學號
+- Each partner's specification: the five Step 0 fields, labelled with the partner's name
+  > 每位組員的規格書：包含步驟 0 的五個欄位，並標註該組員姓名
+- Each partner's four technique records: that partner's own prompt, full output, docstring produced, and 2–3 sentence analysis
+  >每位組員的四種技巧實驗記錄：包含各自的 Prompt 原文、完整輸出、產出的 Docstring，以及 2–3 句的分析
+- Your pair's approved docstring (edits noted) and one shared paragraph explaining the choice: 4–6 sentences
+  > 雙人組最終批准的 Docstring（需註記修改處），以及一段解釋選擇理由的共同說明（4–6 句話）
+- We encourage detailed analyses that cite your specification and the actual output.
+  > 我們鼓勵進行詳細的分析，並在分析中具體引用你的規格書（Specification）與模型的實際產出結果。
+- The more specific you are, the more useful this lab will be for Assignment 1.
+  > 你的分析越具體精準，本次實驗對你完成作業 1（Assignment 1）的幫助就越大。
+
+
+- 教學重點內容：
+  - 完整合規的實驗紀錄（Comprehensive Experiment Documentation）：繳交要求結合個人與雙人的成果，個人部分需包含規格書（Step 0 的 5 個欄位） 與 4 種提示技巧（Zero-shot, Few-shot, CoT, Self-correction）的完整紀錄與分析。
+  - 同儕審核與最終決策（Peer Review & Final Consensus）：除了呈現個人實驗，最關鍵的是成果匯整——雙人組需共同選出最終批准的 Docstring（標記修改處），並撰寫 4–6 句話綜合分析其準確度、格式一致性與 Token 成本。
+  - 嚴謹的工程習慣培養（Rigorous Engineering Practices）：報告結構要求極其嚴謹，從規格定義、Prompt 實驗對比、歷程追蹤到最終同儕 Review 與理由說明，完全體現軟體工程中的審核流程（PR Review）。
+  - 數據導向與具體例證分析（Evidence-Based Analysis）：教學強調分析不能空泛，必須精確對照步驟 0 的規格書並引用 LLM 的實際輸出文字作證。
+  - 實作經驗的累積與遷移（Skill Transferability）：Lab 5 的實驗紀錄不僅是為了當堂課的繳交，更是為接下來的個人作業 Assignment 1 建立嚴謹的 Prompt 分析習慣與資產。
+  - 高品質 Prompt Log 的工程價值：越具體、有憑據的診斷紀錄，越能幫助開發者掌握模型預測的機率分佈行為，建立可複現且可預測的 AI 協作開發流程。
+- 個人看法：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 一、這次要處理什麼程式？
 指定函式為 process_records(records, threshold)，四種技巧都使用同一個函式。依講義第 57 頁的程式，它會：
