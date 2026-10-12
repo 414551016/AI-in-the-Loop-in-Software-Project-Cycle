@@ -82,10 +82,22 @@
 
   其中要記住：<b>多次回答一致，也不代表正確；一次沒測到問題，也不代表問題不存在。</b>
 
+- 五、老師希望你最後學會什麼？
+  <br>依第 17、59、63 頁，目標是建立這套能力：
+  <div align="left" >
+    <img src="../Lecture/week6-prompt-engineer-2-261012/week6-prompt-engineer-2-261012_page-0017.jpg" width="49%">
+    <img src="../Lecture/week6-prompt-engineer-2-261012/week6-prompt-engineer-2-261012_page-0059.jpg" width="49%">
+    <img src="../Lecture/week6-prompt-engineer-2-261012/week6-prompt-engineer-2-261012_page-0063.jpg" width="49%">
+  </div>
 
+  - <b>辨識問題：</b>說明輸出出了什麼錯，屬於哪一種失敗模式。
+  - <b>設計測試：</b>選擇能驗證問題的方法，而非一直隨意換提示。
+  - <b>提出證據：</b>保留原始回答、查核來源與具體差異。
+  - <b>選擇改善方式：</b>例如提供來源材料、允許 AI 回答不知道、要求每項主張附證據。
+  - <b>應用到團隊專案：</b>判斷自己的工具可能在哪裡失敗，以及哪些決定需要人類確認。
 
-
-
+  自學單元則補充這些行為背後的概念：RLHF 是「人類回饋強化學習」；Constitutional AI 是以明確原則引導模型行為的方法；calibration 是「信心校準」，關心模型表現出的信心是否符合實際正確程度。
+  <br>我的整理建議（不是講義新增要求）：做實驗時記下模型名稱、測試日期、完整提示、原始回答、查核證據與結論。接著依正式 Question 1、Question 2 組織回答，合併成個人 PDF，再確認 E3 繳交狀態。
 
 
 
