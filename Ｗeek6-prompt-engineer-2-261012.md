@@ -1,4 +1,4 @@
-# Week 6 (2026-10-12) Prompt Engineering II — Why Prompts Fail（提示工程 II：提示為什麼會失敗）
+# Week 6 (2026-10-12) <br>Prompt Engineering II — Why Prompts Fail（提示工程 II：提示為什麼會失敗）
 ## 教學資源：
 - 講義[［week6-prompt-engineer-2-261012.pdf］](https://github.com/414551016/AI-in-the-Loop-in-Software-Project-Cycle/blob/main/Lecture/week6-prompt-engineer-2-261012.pdf)
 - 教學影片：
